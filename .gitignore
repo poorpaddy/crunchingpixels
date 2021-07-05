@@ -1,0 +1,61 @@
+# Hidden Environment Files #
+# .*
+# !.babelrc
+# !.czrc
+# !.editorconfig
+# !.eslintrc
+# !.eslintrc.js
+# !.gitattributes
+# !.github
+# !.gitignore
+# !.npmrc
+# !.nvmrc
+# !.prettierrc
+# !.prettierrc.js
+# !.stylelintignore
+# !.stylelintrc
+# !.versionrc
+
+# LOG Files #
+*.log
+log/
+
+# Node Files #
+*/node_modules
+*/yarn-lock.js
+
+# Tests #
+# /coverage/
+# /errorShots/
+# /screenshots/
+# stats.json
+
+# Build folders #
+dist
+local
+build
+
+# Ignore generated content #
+content/__generated__/
+
+#IDE Specific files
+
+#VS Code
+.vscode/
+
+#SublimeText
+*.sublime-project
+*.sublime-workspace
+
+#IntelliJ
+.idea/
+*.iml
+atlassian-ide-plugin.xml
+*.ipr
+*.iws
+
+#Eclipse
+.project
+
+#OSX
+.DS_Store
