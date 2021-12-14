@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Rock";
+    font-weight: 400;
+    src: url("../fonts/rock.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Rock";
+    font-weight: 700;
+    src: url("../fonts/rockeb.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../fonts/roboto.ttf") format("truetype");
+  }
+}

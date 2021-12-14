@@ -1,0 +1,9 @@
+* {
+  @apply font-rock text-secondary;
+}
+
+button,
+button:focus,
+input:focus {
+  @apply outline-none;
+}
