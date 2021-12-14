@@ -1,7 +1,7 @@
 import React from "react";
 import { IHeaderNavItem } from "../types";
-import linkedinIcon from "../../../../images/icons/linkedin.svg";
-import { useLockBodyScroll } from "../../../../hooks";
+import linkedinIcon from "@images/icons/linkedin.svg";
+import { useLockBodyScroll } from "@hooks";
 
 interface IProps {
   headerNavItems: IHeaderNavItem[];

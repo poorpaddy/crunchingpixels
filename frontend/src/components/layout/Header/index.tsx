@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import cn from "classnames";
 import MenuIcon from "./MenuIcon";
 import MobileMenu from "./MobileMenu";
-import Container from "../../layout/Container";
-import logo from "../../../images/icons/logo.png";
+import Container from "@layout/Container";
+import logo from "@images/icons/logo.png";
 import { IHeaderProps } from "./types";
 
 const headerNavItems = [

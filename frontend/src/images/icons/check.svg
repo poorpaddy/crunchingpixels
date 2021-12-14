@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>check</title>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio-Post" transform="translate(-17.000000, -761.000000)" fill="#EF821D" fill-rule="nonzero">
+            <g id="check" transform="translate(17.000000, 761.000000)">
+                <rect id="Rectangle" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <polygon id="Path" points="13.159375 3.7190625 6.944375 9.9340625 4.0103125 6.99984375 2.9496875 8.060625 5.88375 10.9946875 6.94421875 12.055625 14.22 4.77984375"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
