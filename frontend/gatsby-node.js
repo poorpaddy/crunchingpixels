@@ -7,6 +7,7 @@ exports.onCreateWebpackConfig = function ({ actions }) {
         src: path.resolve(__dirname, "src"),
         "@components": path.resolve(__dirname, "src", "components"),
         "@layout": path.resolve(__dirname, "src", "components", "layout"),
+        "@general": path.resolve(__dirname, "src", "components", "general"),
         "@home": path.resolve(__dirname, "src", "components", "home"),
         "@portfolio": path.resolve(__dirname, "src", "components", "portfolio"),
         "@sagas": path.resolve(__dirname, "src", "components", "sagas"),

@@ -17,6 +17,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layout/*": ["src/components/layout/*"],
+      "@general/*": ["src/components/general/*"],
       "@home/*": ["src/components/home/*"],
       "@portfolio/*": ["src/components/portfolio/*"],
       "@portfolio-post/*": ["src/components/portfolio-post/*"],
