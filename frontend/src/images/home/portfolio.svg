@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="169px" height="169px" viewBox="0 0 169 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>noun_portfolio_1636519</title>
+    <defs>
+        <filter x="-70.0%" y="-70.0%" width="240.0%" height="240.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="10" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.18198208 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-97.000000, -1506.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(0.000000, 32.000000)">
+                <g id="Group-4-Copy-2" filter="url(#filter-1)" transform="translate(127.000000, 1504.000000)">
+                    <g id="noun_portfolio_1636519" transform="translate(27.697842, 27.697842)">
+                        <rect id="Rectangle" x="5.53956835" y="14.2446043" width="16.618705" height="13.4532374"></rect>
+                        <rect id="Rectangle" x="5.53956835" y="30.8633094" width="16.618705" height="13.4532374"></rect>
+                        <rect id="Rectangle" x="24.5323741" y="14.2446043" width="16.618705" height="13.4532374"></rect>
+                        <path d="M23.3453237,48.8386434 L1.79579413,48.8386434 L1.79579413,10.8530319 L44.8948533,10.8530319 L44.8948533,29.8458376 L46.6906475,29.8458376 L46.6906475,0 L0,0 L0,50.647482 L23.3453237,50.647482 L23.3453237,48.8386434 Z M35.9158827,5.42651593 L44.8948533,5.42651593 L44.8948533,9.04419322 L35.9158827,9.04419322 L35.9158827,5.42651593 Z M8.97897067,1.80883864 L10.7747648,1.80883864 L10.7747648,3.61767729 L8.97897067,3.61767729 L8.97897067,1.80883864 Z M5.3873824,1.80883864 L7.18317654,1.80883864 L7.18317654,3.61767729 L5.3873824,3.61767729 L5.3873824,1.80883864 Z M1.79579413,1.80883864 L3.59158827,1.80883864 L3.59158827,3.61767729 L1.79579413,3.61767729 L1.79579413,1.80883864 Z M1.79579413,5.42651593 L34.1200885,5.42651593 L34.1200885,9.04419322 L1.79579413,9.04419322 L1.79579413,5.42651593 Z" id="Shape"></path>
+                        <path d="M24.5323741,30.8633094 L24.5323741,53.8129496 L53.8129496,53.8129496 L53.8129496,30.8633094 L24.5323741,30.8633094 Z M41.0026978,32.6992806 C42.5582284,32.6992806 43.7477518,33.8926619 43.7477518,35.4532374 C43.7477518,37.0138129 42.5582284,38.2071942 41.0026978,38.2071942 C39.4471673,38.2071942 38.2576439,37.0138129 38.2576439,35.4532374 C38.2576439,33.8926619 39.4471673,32.6992806 41.0026978,32.6992806 Z M51.9829137,51.9769784 L26.3624101,51.9769784 L26.3624101,44.6330935 L34.5975719,36.371223 L43.7477518,46.4690647 L41.9177158,41.8791367 L45.5777878,39.1251799 L51.9829137,43.7151079 L51.9829137,51.9769784 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
