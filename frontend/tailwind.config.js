@@ -2,6 +2,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        sm: "5px 5px 4px 0px rgba(0,0,0,0.6)",
+        md: "10px 10px 30px 0px rgba(0,0,0,0.18)",
+        lg: "0px 0px 20px 0px rgba(0,0,0,0.21)",
+      },
+      backgroundImage: {
+        home: "url('../images/bg/home.jpg')",
+        header: "url('../images/bg/header.jpg')",
+      },
       fontFamily: {
         rock: ["Rock", "serif"],
         roboto: ["Roboto", "serif"],
