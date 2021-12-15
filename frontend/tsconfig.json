@@ -24,8 +24,8 @@
       "@sagas/*": ["src/components/sagas/*"],
       "@sagas-post/*": ["src/components/sagas-post/*"],
       "@contact/*": ["src/components/contact/*"],
-      "@images/*": ["src/components/images/*"],
-      "@hooks": ["src/components/hooks"],
+      "@images/*": ["src/assets/images/*"],
+      "@hooks": ["src/hooks"],
       "@config/*": ["src/config/*"]
     }
   },

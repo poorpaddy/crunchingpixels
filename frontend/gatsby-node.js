@@ -24,7 +24,8 @@ exports.onCreateWebpackConfig = function ({ actions }) {
           "portfolio-post"
         ),
         "@contact": path.resolve(__dirname, "src", "components", "contact"),
-        "@images": path.resolve(__dirname, "src", "images"),
+        "@images": path.resolve(__dirname, "src", "assets", "images"),
+        "@styles": path.resolve(__dirname, "src", "assets", "styles"),
         "@hooks": path.resolve(__dirname, "src", "hooks"),
         "@config": path.resolve(__dirname, "src", "config"),
       },

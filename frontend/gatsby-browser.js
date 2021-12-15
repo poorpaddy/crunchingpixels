@@ -1,3 +1,3 @@
-import "./src/styles/tailwind.css";
-import "./src/styles/global.css";
-import "./src/styles/hamburger.css";
+import "@styles/tailwind.css";
+import "@styles/global.css";
+import "@styles/hamburger.css";
