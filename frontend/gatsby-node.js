@@ -4,6 +4,7 @@ exports.onCreateWebpackConfig = function ({ actions }) {
   actions.setWebpackConfig({
     resolve: {
       alias: {
+        src: path.resolve(__dirname, "src"),
         "@components": path.resolve(__dirname, "src", "components"),
         "@layout": path.resolve(__dirname, "src", "components", "layout"),
         "@home": path.resolve(__dirname, "src", "components", "home"),
@@ -24,6 +25,7 @@ exports.onCreateWebpackConfig = function ({ actions }) {
         "@contact": path.resolve(__dirname, "src", "components", "contact"),
         "@images": path.resolve(__dirname, "src", "images"),
         "@hooks": path.resolve(__dirname, "src", "hooks"),
+        "@config": path.resolve(__dirname, "src", "config"),
       },
     },
   });
