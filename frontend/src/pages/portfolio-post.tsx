@@ -1,13 +1,12 @@
 import React from "react";
 import Container from "@layout/Container";
-import Header from "@layout/Header";
 import Overview from "@portfolio-post/Overview";
 import MyRole from "@portfolio-post/MyRole";
+import Layout from "@layout/Layout";
 
 const PortfolioPost: React.FC = function () {
   return (
-    <>
-      <Header showBg />
+    <Layout>
       <Container>
         <div className="mt-12 mb-14">
           <h5 className="text-orange text-xs font-roboto">Wordpress</h5>
@@ -19,7 +18,7 @@ const PortfolioPost: React.FC = function () {
           <MyRole />
         </div>
       </Container>
-    </>
+    </Layout>
   );
 };
 

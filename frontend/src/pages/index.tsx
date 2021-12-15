@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "@layout/Footer";
 import Card from "@home/Card";
 import Hero from "@home/Hero";
+import Layout from "@layout/Layout";
 import { ICards } from "@home/types";
 import group from "@images/home/group.svg";
 import person from "@images/home/person.svg";
@@ -53,15 +54,14 @@ const Home: React.FC = function () {
     },
   ];
   return (
-    <>
+    <Layout hideHeader>
       <Hero />
       <div className="bg-gray-200 pb-10">
         {Cards.map((card, i) => (
           <Card key={i} {...card} />
         ))}
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
