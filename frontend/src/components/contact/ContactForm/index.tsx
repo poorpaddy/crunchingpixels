@@ -16,7 +16,9 @@ const ContactForm = () => {
         </label>
         <textarea className="h-[120px] rounded border-2 border-gray-200 bg-gray-100 text-sm p-3 font-roboto outline-none"></textarea>
       </div>
-      <Button label="Send" type="submit" />
+      <div className="text-center">
+        <Button label="Send" type="submit" />
+      </div>
     </form>
   );
 };
