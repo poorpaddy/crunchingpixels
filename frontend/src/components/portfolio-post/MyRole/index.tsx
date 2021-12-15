@@ -1,6 +1,6 @@
 import React from "react";
 import checkSvg from "@images/icons/check.svg";
-import IFAW from "@images/PortfolioPost/IFAW-website.jpg";
+import IFAW from "@images/portfolio-post/IFAW-website.jpg";
 
 const MyRole = () => {
   return (
