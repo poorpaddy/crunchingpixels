@@ -7,6 +7,7 @@ import { ICards } from "@home/types";
 import group from "@images/home/group.svg";
 import person from "@images/home/person.svg";
 import portfolio from "@images/home/portfolio.svg";
+import Container from "@components/layout/Container";
 
 const Home: React.FC = function () {
   const Cards: ICards[] = [
@@ -56,11 +57,11 @@ const Home: React.FC = function () {
   return (
     <Layout hideHeader>
       <Hero />
-      <div className="bg-gray-200 pb-10">
+      <Container className="bg-gray-200 md:bg-white pb-10 md:p-14 rounded-lg md:my-2 lg:my-4 lg:grid grid-cols-3 gap-5">
         {Cards.map((card, i) => (
           <Card key={i} {...card} />
         ))}
-      </div>
+      </Container>
     </Layout>
   );
 };

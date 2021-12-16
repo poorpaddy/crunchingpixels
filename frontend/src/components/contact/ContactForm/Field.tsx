@@ -3,12 +3,15 @@ import { IFieldProps } from "./types";
 
 const Field: React.FC<IFieldProps> = ({ type, label, id }) => {
   return (
-    <div className="flex flex-col space-y-2">
-      <label className="text-xs font-roboto text-opacity-50" htmlFor={id}>
+    <div className="flex flex-1 flex-col space-y-2">
+      <label
+        className="text-xs lg:text-base font-roboto text-secondary text-opacity-50"
+        htmlFor={id}
+      >
         {label}
       </label>
       <input
-        className="h-10 rounded border-2 border-gray-200 bg-gray-100 text-sm p-3 font-roboto"
+        className="h-10 rounded border-2 border-gray-200 bg-gray-100 text-sm lg:text-base p-3 font-roboto"
         type={type}
         id={id}
       />

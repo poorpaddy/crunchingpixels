@@ -8,8 +8,12 @@ module.exports = {
         lg: "0px 0px 20px 0px rgba(0,0,0,0.21)",
       },
       backgroundImage: {
-        home: "url('@images/bg/home.jpg')",
+        "home-sm": "url('@images/bg/home-sm.jpg')",
+        "home-md": "url('@images/bg/home-md.jpg')",
+        "home-lg": "url('@images/bg/home-lg.jpg')",
         header: "url('@images/bg/header.jpg')",
+        contact: "url('@images/bg/contact-tab.jpg')",
+        "contact-desk": "url('@images/bg/contact-desk.jpg')",
       },
       fontFamily: {
         rock: ["Rock", "serif"],
