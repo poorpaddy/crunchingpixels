@@ -18,4 +18,12 @@
     font-weight: 400;
     src: url("../fonts/roboto.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("../fonts/roboto-bold.ttf") format("truetype");
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 }
