@@ -7,7 +7,7 @@ import cn from "classnames";
 const Pagination: React.FC<IProps> = ({ pages }) => {
   const [activePage, setActivePage] = useState(1);
   return (
-    <div className="mt-9 flex-center">
+    <div className="mt-9 lg:mt-11 flex-center">
       <img
         className="relative top-[5px] cursor-pointer w-2"
         src={chevronLeft}

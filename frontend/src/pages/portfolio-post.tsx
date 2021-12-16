@@ -9,7 +9,7 @@ const PortfolioPost: React.FC = function () {
     <Layout>
       <div className="bg-white mt-2 lg:mt-4 mb-2 lg:mb-4 rounded-[20px]">
         <Container>
-          <div className="pt-12 pb-14 lg:pb-[90px] sm:px-5">
+          <div className="pt-12 pb-14 lg:pb-[90px] sm:px-5 md:px-0">
             <h5 className="text-orange text-xs lg:text-sm font-roboto">
               Wordpress
             </h5>
