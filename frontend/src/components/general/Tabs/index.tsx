@@ -18,7 +18,7 @@ const Tabs: React.FC<IProps> = ({ tabs }) => {
   };
 
   return (
-    <div className="flex justify-between items-start mt-5 mb-4 border-b border-gray-200">
+    <div className="flex justify-between items-start mt-5 lg:mt-[26px] mb-4 border-b border-gray-200">
       <ul className="flex flex-1 overflow-auto space-x-5 font-roboto text-sm scrollbar-hide">
         {tabsData.map(({ label, key, active }) => (
           <li
