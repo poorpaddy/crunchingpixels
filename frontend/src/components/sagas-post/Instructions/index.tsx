@@ -8,16 +8,16 @@ const Instructions = () => {
     "Bake at 375° for 45 minutes; uncover and bake 10 more minutes. Let stand 10 minutes before serving.",
   ];
   return (
-    <div className="mt-[18px]">
-      <h3 className="text-primary text-xl">Instructions</h3>
-      <ol className="list-decimal px-5 mt-4 leading-6 font-roboto text-sm">
+    <div className="mt-[18px] lg:mt-[30px]">
+      <h3 className="text-primary text-xl lg:text-2xl">Instructions</h3>
+      <ol className="list-decimal px-5 mt-4 leading-6 font-roboto text-sm lg:text-base lg:leading-[30px]">
         {instructions.map((instruction, i) => (
           <li key={i} className="px-[5px]">
             {instruction}
           </li>
         ))}
       </ol>
-      <p className="text-sm font-roboto mt-4 mb-6">
+      <p className="text-sm font-roboto mt-4 lg:mt-[30px] mb-6 md:mb-12 lg:text-base lg:leading-[30px]">
         Original recipe from: &ensp;
         <a
           className="underline text-primary"
@@ -26,7 +26,7 @@ const Instructions = () => {
           https://www.allrecipes.com/ recipe/extra-easy-lasagna/
         </a>
       </p>
-      <img src={lasagna} alt="" />
+      <img className="w-full" src={lasagna} alt="" />
     </div>
   );
 };

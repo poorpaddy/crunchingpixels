@@ -12,9 +12,9 @@ const Ingredients = () => {
     "1 Tbsp of Italian seasoning",
   ];
   return (
-    <div className="mt-[18px]">
-      <h3 className="text-primary text-xl">Ingredients</h3>
-      <ul className="list-disc px-5 mt-4 leading-6 font-roboto text-sm">
+    <div className="mt-[18px] lg:mt-[30px]">
+      <h3 className="text-primary text-xl lg:text-2xl">Ingredients</h3>
+      <ul className="list-disc px-5 mt-4 lg:mt-6 leading-6 font-roboto text-sm lg:text-base lg:leading-[30px]">
         {ingredients.map((ingredient, i) => (
           <li key={i}>{ingredient}</li>
         ))}
