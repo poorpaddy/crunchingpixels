@@ -4,9 +4,9 @@ import Container from "@layout/Container";
 
 const Hero: React.FC = () => {
   return (
-    <main className="bg-home-sm md:bg-home-md lg:bg-home-lg bg-cover bg-center">
+    <main className="bg-home-sm md:bg-home-md lg:bg-home-lg bg-cover bg-center md:rounded-bl-lg md:rounded-br-lg lg:rounded-bl-2xl lg:rounded-br-2xl">
+      <Header />
       <Container>
-        <Header />
         <section className="h-[500px] text-left ml-5 py-5 relative">
           <div className="absolute bottom-0 md:relative md:w-1/3">
             <h1 className="text-3xl lg:text-7xl md:mt-20 lg:mt-20 md:text-[40px] mt-5 text-white">

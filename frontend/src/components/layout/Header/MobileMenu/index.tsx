@@ -7,7 +7,7 @@ import { useLockBodyScroll } from "@hooks";
 const MobileMenu: React.FC = () => {
   useLockBodyScroll();
   return (
-    <div className="absolute top-full bg-white z-10 -left-4 -right-4 h-screen">
+    <div className="absolute top-full bg-white z-10 -left-4 -right-4 h-screen md:hidden">
       <ul>
         {NAVITEMS.map(({ label, key, url }) => (
           <li

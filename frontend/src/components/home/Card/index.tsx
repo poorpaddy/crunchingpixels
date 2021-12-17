@@ -5,7 +5,7 @@ import cn from "classnames";
 
 const Card: React.FC<ICards> = ({ title, avatar, points }) => {
   return (
-    <Container className="pt-20 md:pt-6 lg:pt-20 lg:px-[0px]">
+    <div className="pt-20 md:pt-6 lg:pt-20 ">
       <div className="text-center pt-20 md:py-10 lg:pt-20 px-6 md:px-8 bg-white pb-1 rounded-lg relative lg:relative md:flex lg:block md:bg-[#f7f7f7]">
         <div className="md:w-[48%] lg:w-auto md:flex md:flex-col lg:block md:justify-center md:items-center">
           <div
@@ -36,7 +36,7 @@ const Card: React.FC<ICards> = ({ title, avatar, points }) => {
           </ul>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 

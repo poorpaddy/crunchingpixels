@@ -57,7 +57,7 @@ const Home: React.FC = function () {
   return (
     <Layout hideHeader>
       <Hero />
-      <Container className="bg-gray-200 md:bg-white pb-10 md:p-14 rounded-lg md:my-2 lg:my-4 lg:grid grid-cols-3 gap-5">
+      <Container className="bg-gray-200 md:bg-white pb-10 md:p-14 rounded-lg lg:rounded-2xl md:my-2 lg:my-4 lg:grid grid-cols-3 gap-5">
         {Cards.map((card, i) => (
           <Card key={i} {...card} />
         ))}

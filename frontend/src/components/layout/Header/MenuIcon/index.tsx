@@ -3,7 +3,7 @@ import { IProps } from "./types";
 
 const Menu: React.FC<IProps> = ({ showMobileMenu, toggleMobileMenu }) => {
   return (
-    <div className="ml-auto">
+    <div className="ml-auto md:hidden">
       <div
         className={`hamburger hamburger--spin ${
           showMobileMenu ? "is-active" : ""
