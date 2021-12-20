@@ -57,11 +57,13 @@ const Home: React.FC = function () {
   return (
     <Layout hideHeader>
       <Hero />
-      <Container className="bg-gray-200 md:bg-white pb-10 md:p-14 rounded-lg lg:rounded-2xl md:my-2 lg:my-4 lg:grid grid-cols-3 gap-5">
-        {Cards.map((card, i) => (
-          <Card key={i} {...card} />
-        ))}
-      </Container>
+      <main className="bg-gray-200 md:bg-white md:my-2 lg:my-4 py-14 lg:py-24 md:rounded-lg lg:rounded-[20px]  ">
+        <Container className="lg:grid grid-cols-3 gap-5">
+          {Cards.map((card, i) => (
+            <Card key={i} {...card} />
+          ))}
+        </Container>
+      </main>
     </Layout>
   );
 };

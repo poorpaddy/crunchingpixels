@@ -15,7 +15,19 @@ const Portfolio = () => {
           <h1 className="text-2xl md:text-3xl lg:text-[40px] font-bold">
             Portfolio
           </h1>
-          <Tabs tabs={["All Topics", "Wordpress", "Application", "Sephere"]} />
+          <Tabs
+            tabs={[
+              "All Topics",
+              "Wordpress",
+              "Application",
+              "Sephere",
+              "Artwork",
+              "Print",
+              "Joomla",
+              "Videography",
+              "Web",
+            ]}
+          />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 md:gap-x-5 md:gap-y-3  lg:gap-x-5 lg:gap-y-6 md:mt-6">
             <img src={IFAW} alt="IFAW icon" className="w-full" />
             <img src={unicef} alt="unicef icon" className="w-full" />

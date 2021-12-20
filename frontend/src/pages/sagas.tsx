@@ -60,7 +60,14 @@ const Sagas: React.FC = function () {
               Sagas
             </h1>
             <Tabs
-              tabs={["All Topics", "Wordpress", "Application", "Sephere"]}
+              tabs={[
+                "All Topics",
+                "For fun",
+                "Resources",
+                "Recipes",
+                "Think tank",
+                "Photography",
+              ]}
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 lg:gap-x-5 lg:gap-y-[70px]">
               {recipes.map(({ imgUrl, category, title, desc, date }, i) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { NAVITEMS } from "@config/constants";
-import linkedinIcon from "@images/icons/linkedin.svg";
+import linkedinIcon from "@images/icons/linkedin-mobile.svg";
 import { useLockBodyScroll } from "@hooks";
 
 const MobileMenu: React.FC = () => {

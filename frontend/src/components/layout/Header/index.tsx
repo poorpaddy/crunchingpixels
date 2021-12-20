@@ -16,8 +16,7 @@ const Header: React.FC<IHeaderProps> = ({ showBg }) => {
   return (
     <header
       className={cn("relative pb-1 pt-1.5 bg-cover bg-center w-full ", {
-        "bg-header md:rounded-bl-lg md:rounded-br-lg lg:rounded-bl-2xl lg:rounded-br-2xl":
-          showBg,
+        "bg-header md:rounded-b-lg lg:rounded-b-[20px]": showBg,
       })}
     >
       <Container className="flex justify-between items-center">
@@ -28,12 +27,12 @@ const Header: React.FC<IHeaderProps> = ({ showBg }) => {
         />
 
         {showMobileMenu && <MobileMenu />}
-        <div className="hidden md:flex justify-center items-center  md:w-1/2">
-          <ul className="flex justify-between w-full">
+        <div className="hidden md:block md:w-1/2">
+          <ul className="flex justify-end w-full md:space-x-6 lg:space-x-11">
             {NAVITEMS.map(({ label, key, url }) => (
               <li
                 key={key}
-                className="cursor-pointer text-white hover:text-[#eb6923]"
+                className="cursor-pointer text-white hover:text-[#eb6923] "
               >
                 <Link to={url} className="leading-4">
                   {label}
@@ -44,7 +43,7 @@ const Header: React.FC<IHeaderProps> = ({ showBg }) => {
             <a
               href="https://www.linkedin.com/feed/"
               target="_blank"
-              className="flex items-center justify-center rounded w-6 h-6 bg-gray-400 cursor-pointer"
+              className="flex items-center justify-center flex-shrink-0 rounded w-6 h-6 bg-white cursor-pointer"
             >
               <img src={linkedinIcon} alt="linkedin icon" />
             </a>

@@ -6,7 +6,7 @@ import cn from "classnames";
 const Card: React.FC<ICards> = ({ title, avatar, points }) => {
   return (
     <div className="pt-20 md:pt-6 lg:pt-20 ">
-      <div className="text-center pt-20 md:py-10 lg:pt-20 px-6 md:px-8 bg-white pb-1 rounded-lg relative lg:relative md:flex lg:block md:bg-[#f7f7f7]">
+      <div className="text-center pt-20 md:py-10 lg:pt-20 px-6 md:px-8 bg-white pb-1 rounded-lg lg:rounded-[20px] relative lg:relative md:flex lg:block md:bg-[#f7f7f7]">
         <div className="md:w-[48%] lg:w-auto md:flex md:flex-col lg:block md:justify-center md:items-center">
           <div
             className={cn(
@@ -16,19 +16,19 @@ const Card: React.FC<ICards> = ({ title, avatar, points }) => {
           >
             <img src={avatar.image} alt="avatar" />
           </div>
-          <h1 className="hidden md:block lg:hidden mt-9 text-2xl text-secondary font-[600]">
+          <h1 className="hidden md:block lg:hidden mt-9 text-2xl lg:text-3xl text-secondary font-[600]">
             {title}
           </h1>
         </div>
         <div className="md:w-[52%] lg:w-auto">
-          <h1 className="md:hidden lg:block text-2xl text-secondary mb-7 font-[600]">
+          <h1 className="md:hidden lg:block text-2xl lg:text-3xl text-secondary mb-7 font-[600]">
             {title}
           </h1>
           <ul className="text-left">
             {points.map((point, i) => (
               <li
                 key={i}
-                className="text-sm text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2"
+                className="text-sm lg:text-base text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2"
               >
                 {point}
               </li>
