@@ -18,6 +18,14 @@ export default {
       name: "category",
       type: "reference",
       to: [{ type: "category" }],
+      options: {
+        filter: () => {
+          return {
+            filter: "type == $type",
+            params: { type: "saga" },
+          };
+        },
+      },
     },
     {
       title: "Summary",
