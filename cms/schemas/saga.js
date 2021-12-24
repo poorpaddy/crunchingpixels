@@ -16,16 +16,21 @@ export default {
     {
       title: "Category",
       name: "category",
-      type: "reference",
-      to: [{ type: "category" }],
-      options: {
-        filter: () => {
-          return {
-            filter: "type == $type",
-            params: { type: "saga" },
-          };
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "category" }],
+          options: {
+            filter: () => {
+              return {
+                filter: "type == $type",
+                params: { type: "saga" },
+              };
+            },
+          },
         },
-      },
+      ],
     },
     {
       title: "Summary",
