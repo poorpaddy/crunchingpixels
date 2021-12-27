@@ -1,3 +1,4 @@
+import slugify from "slugify";
 export default {
   title: "Portfolio",
   name: "portfolio",
@@ -53,6 +54,15 @@ export default {
       name: "gallery",
       type: "array",
       of: [{ type: "image" }],
+    },
+    {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "title",
+        slugify: (input) => slugify(input, { lower: true }),
+      },
     },
   ],
 };
