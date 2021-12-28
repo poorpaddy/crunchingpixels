@@ -2,7 +2,7 @@ export interface ICards {
   title: string;
   avatar: {
     color: string;
-    image: SVGAElement;
+    image: string;
   };
   points: string[];
 }

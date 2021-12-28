@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "@layout/Footer";
 import Card from "@home/Card";
 import Hero from "@home/Hero";
 import Layout from "@layout/Layout";

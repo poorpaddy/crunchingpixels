@@ -1,4 +1,3 @@
-import Container from "@layout/Container";
 import React from "react";
 import { ICards } from "../types";
 import cn from "classnames";
