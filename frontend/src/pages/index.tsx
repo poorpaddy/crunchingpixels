@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "@layout/Footer";
 import Card from "@home/Card";
 import Hero from "@home/Hero";
 import Layout from "@layout/Layout";
@@ -15,7 +14,10 @@ const Home: React.FC = function () {
       title: "Think Tank",
       avatar: {
         color: "bg-primary",
-        image: group,
+        image: {
+          src: group,
+          altText: "team icon",
+        },
       },
       points: [
         "Creating a php.ini from the server def…",
@@ -29,7 +31,10 @@ const Home: React.FC = function () {
       title: "Fun Staff",
       avatar: {
         color: "bg-orange",
-        image: person,
+        image: {
+          src: person,
+          altText: "person icon",
+        },
       },
       points: [
         "Creating a php.ini from the server def…",
@@ -43,7 +48,10 @@ const Home: React.FC = function () {
       title: "Portfolio",
       avatar: {
         color: "bg-[#41dad8]",
-        image: portfolio,
+        image: {
+          src: portfolio,
+          altText: "portfolio icon",
+        },
       },
       points: [
         "Creating a php.ini from the server def…",

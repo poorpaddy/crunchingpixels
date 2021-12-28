@@ -15,20 +15,20 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@src/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@layout/*": ["src/components/layout/*"],
       "@general/*": ["src/components/general/*"],
       "@home/*": ["src/components/home/*"],
       "@portfolio/*": ["src/components/portfolio/*"],
-      "@portfolio-post/*": ["src/components/portfolio-post/*"],
       "@sagas/*": ["src/components/sagas/*"],
-      "@sagas-post/*": ["src/components/sagas-post/*"],
       "@contact/*": ["src/components/contact/*"],
       "@images/*": ["src/assets/images/*"],
       "@hooks": ["src/hooks"],
+      "@utils": ["src/utils"],
       "@config/*": ["src/config/*"]
     }
   },
-  "include": ["./src/**/**/*"],
+  "include": ["./src/**/**/*", "./node_modules/@sanity/base/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

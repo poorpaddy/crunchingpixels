@@ -1,12 +1,11 @@
 import React, { useState } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import cn from "classnames";
 import MenuIcon from "./MenuIcon";
 import MobileMenu from "./MobileMenu";
 import Container from "@layout/Container";
-import logo from "@images/icons/logo.png";
 import { NAVITEMS } from "@config/constants";
 import { Link } from "gatsby";
-import linkedinIcon from "@images/icons/linkedin.svg";
 
 import { IHeaderProps } from "./types";
 
@@ -20,7 +19,12 @@ const Header: React.FC<IHeaderProps> = ({ showBg }) => {
       })}
     >
       <Container className="flex justify-between items-center">
-        <img src={logo} alt="crunching pixels logo" />
+        <Link to="/">
+          <StaticImage
+            src="../../../assets/images/icons/logo.png"
+            alt="crunching pixels logo"
+          />
+        </Link>
         <MenuIcon
           showMobileMenu={showMobileMenu}
           toggleMobileMenu={toggleMobileMenu}
@@ -45,7 +49,10 @@ const Header: React.FC<IHeaderProps> = ({ showBg }) => {
               target="_blank"
               className="flex items-center justify-center flex-shrink-0 rounded w-6 h-6 bg-white cursor-pointer"
             >
-              <img src={linkedinIcon} alt="linkedin icon" />
+              <StaticImage
+                src="../../../assets/images/icons/linkedin.svg"
+                alt="linkedin icon"
+              />
             </a>
           </ul>
         </div>

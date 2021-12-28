@@ -1,4 +1,3 @@
-import Container from "@layout/Container";
 import React from "react";
 import { ICards } from "../types";
 import cn from "classnames";
@@ -14,7 +13,7 @@ const Card: React.FC<ICards> = ({ title, avatar, points }) => {
               avatar.color
             )}
           >
-            <img src={avatar.image} alt="avatar" />
+            <img src={avatar.image.src} alt={avatar.image.altText} />
           </div>
           <h1 className="hidden md:block lg:hidden mt-9 text-2xl lg:text-3xl text-secondary font-[600]">
             {title}

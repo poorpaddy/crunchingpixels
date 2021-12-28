@@ -1,3 +1,7 @@
 export interface IProps {
-  pages: number;
+  humanPageNumber: number;
+  nextPagePath: string;
+  numberOfPages: number;
+  pageNumber: number;
+  previousPagePath: string;
 }

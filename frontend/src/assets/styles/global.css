@@ -18,3 +18,7 @@ input:focus {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.list-check-icon ul {
+  list-style-image: url("@images/icons/check.svg");
+}

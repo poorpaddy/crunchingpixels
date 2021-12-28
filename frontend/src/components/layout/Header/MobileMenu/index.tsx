@@ -1,7 +1,7 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { NAVITEMS } from "@config/constants";
-import linkedinIcon from "@images/icons/linkedin-mobile.svg";
 import { useLockBodyScroll } from "@hooks";
 
 const MobileMenu: React.FC = () => {
@@ -26,7 +26,10 @@ const MobileMenu: React.FC = () => {
         target="_blank"
         className="flex items-center justify-center rounded mt-5 ml-11 w-6 h-6 bg-gray-400 cursor-pointer"
       >
-        <img src={linkedinIcon} alt="linkedin icon" />
+        <StaticImage
+          src="../../../assets/images/icons/linkedin.svg"
+          alt="linkedin icon"
+        />
       </a>
     </div>
   );

@@ -1,3 +1,6 @@
+import { ITab } from "@src/types";
 export interface IProps {
-  tabs: string[];
+  tabs: ITab[];
+  activeTab: ITab;
+  setActiveTab: (arg: ITab) => void;
 }
