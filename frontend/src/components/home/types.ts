@@ -4,5 +4,10 @@ export interface ICards {
     color: string;
     image: { src: string; altText: string };
   };
-  points: string[];
+  posts: {
+    title: string;
+    slug: {
+      current: string;
+    };
+  }[];
 }

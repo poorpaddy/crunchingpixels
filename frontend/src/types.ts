@@ -75,3 +75,30 @@ export declare interface IPortfolioPage extends IPageProps {
     categories: Nodes<ICategory>;
   };
 }
+
+export declare interface IHomePage {
+  data: {
+    homePage: {
+      title: string;
+      description: string;
+    };
+    funStuff: Nodes<{
+      title: string;
+      slug: {
+        current: string;
+      };
+    }>;
+    thinkTank: Nodes<{
+      title: string;
+      slug: {
+        current: string;
+      };
+    }>;
+    portfolio: Nodes<{
+      title: string;
+      slug: {
+        current: string;
+      };
+    }>;
+  };
+}

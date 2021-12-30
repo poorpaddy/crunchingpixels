@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 import { ICards } from "../types";
 import cn from "classnames";
 
-const Card: React.FC<ICards> = ({ title, avatar, points }) => {
+const Card: React.FC<ICards> = ({ title, avatar, posts }) => {
   return (
     <div className="pt-20 md:pt-6 lg:pt-20 ">
       <div className="text-center pt-20 md:py-10 lg:pt-20 px-6 md:px-8 bg-white pb-1 rounded-lg lg:rounded-[20px] relative lg:relative md:flex lg:block md:bg-[#f7f7f7]">
@@ -24,13 +25,14 @@ const Card: React.FC<ICards> = ({ title, avatar, points }) => {
             {title}
           </h1>
           <ul className="text-left">
-            {points.map((point, i) => (
-              <li
-                key={i}
-                className="text-sm lg:text-base text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2"
-              >
-                {point}
-              </li>
+            {posts.map((post) => (
+              <Link key={post.slug.current} to={post.slug.current}>
+                <li className="text-sm lg:text-base text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2">
+                  {post.title.length > 38
+                    ? `${post.title.substring(0, 38)}...`
+                    : post.title}
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
