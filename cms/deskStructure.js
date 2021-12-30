@@ -1,10 +1,14 @@
-import S from '@sanity/desk-tool/structure-builder'
-import { createSuperPane } from 'sanity-super-pane';
+import S from "@sanity/desk-tool/structure-builder";
 
 export default () =>
   S.list()
-    .title('Sagas')
+    .title("Content")
     .items([
-      // S.documentTypeListItems(),
-      S.listItem().title('Sagas').child(createSuperPane('saga', S)),
+      S.listItem()
+        .title("Home")
+        .child(S.document().schemaType("homePage").documentId("homePage")),
+      S.divider(),
+      ...S.documentTypeListItems().filter(
+        (item) => !["homePage"].includes(item.getId())
+      ),
     ]);
