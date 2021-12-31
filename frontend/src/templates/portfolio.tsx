@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { graphql, Link, navigate } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Container from "@layout/Container";
 import Layout from "@layout/Layout";
 import Tabs from "@general/Tabs";
 import Pagination from "@general/Pagination";
 import { IPortfolioPage, ITab } from "@src/types";
+import TransitionLink from "@general/TransitionLink";
 
 const defaultTab = { name: "All Topics", slug: "/portfolio" };
 
@@ -48,7 +49,7 @@ const Portfolio: React.FC<IPortfolioPage> = ({
             setActiveTab={changeTabHandler}
             tabs={[defaultTab, ...categoryTabs]}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 md:gap-x-5 md:gap-y-3  lg:gap-x-5 lg:gap-y-6 md:mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 md:gap-x-5 md:gap-y-3 lg:gap-x-5 lg:gap-y-6 md:mt-6">
             {portfolio.nodes.map(
               (
                 {
@@ -60,9 +61,9 @@ const Portfolio: React.FC<IPortfolioPage> = ({
                 },
                 i
               ) => (
-                <Link key={i} to={`/portfolio/${slug.current}`}>
+                <TransitionLink key={i} to={`/portfolio/${slug.current}`}>
                   <GatsbyImage image={gatsbyImageData} alt={altText || ""} />
-                </Link>
+                </TransitionLink>
               )
             )}
           </div>

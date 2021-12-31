@@ -4,14 +4,22 @@ import cn from "classnames";
 import MenuIcon from "./MenuIcon";
 import MobileMenu from "./MobileMenu";
 import Container from "@layout/Container";
-import { NAVITEMS } from "@config/constants";
-import { Link } from "gatsby";
-
+import { LINKEDIN_URL, NAVITEMS } from "@config/constants";
+import { useLocation } from "@reach/router";
 import { IHeaderProps } from "./types";
+import TransitionLink from "@general/TransitionLink";
 
 const Header: React.FC<IHeaderProps> = ({ showBg }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const toggleMobileMenu = () => setShowMobileMenu((prevValue) => !prevValue);
+  const { pathname } = useLocation();
+
+  const getActiveLinkCls = (url) => {
+    if (url === "/" && pathname === "/") return true;
+    if (pathname.includes(url) && url !== "/") return true;
+    return false;
+  };
+
   return (
     <header
       className={cn("relative pb-1 pt-1.5 bg-cover bg-center w-full ", {
@@ -19,33 +27,47 @@ const Header: React.FC<IHeaderProps> = ({ showBg }) => {
       })}
     >
       <Container className="flex justify-between items-center">
-        <Link to="/">
+        <TransitionLink to="/">
           <StaticImage
             src="../../../assets/images/icons/logo.png"
             alt="crunching pixels logo"
+            className="md:!hidden"
           />
-        </Link>
+          <StaticImage
+            src="../../../assets/images/icons/logo-md.png"
+            alt="crunching pixels logo"
+            className="!hidden md:!inline-block lg:!hidden"
+          />
+          <StaticImage
+            src="../../../assets/images/icons/logo-lg.png"
+            alt="crunching pixels logo"
+            className="!hidden lg:!inline-block"
+          />
+        </TransitionLink>
         <MenuIcon
           showMobileMenu={showMobileMenu}
           toggleMobileMenu={toggleMobileMenu}
         />
 
-        {showMobileMenu && <MobileMenu />}
+        <MobileMenu showMobileMenu={showMobileMenu} />
         <div className="hidden md:block md:w-1/2">
           <ul className="flex justify-end w-full md:space-x-6 lg:space-x-11">
             {NAVITEMS.map(({ label, key, url }) => (
               <li
                 key={key}
-                className="cursor-pointer text-white hover:text-[#eb6923] "
+                className={cn(
+                  "cursor-pointer text-white hover:text-[#eb6923]",
+                  { "text-[#eb6923]": getActiveLinkCls(url) }
+                )}
               >
-                <Link to={url} className="leading-4">
+                <TransitionLink fade to={url} className="leading-4">
                   {label}
-                </Link>
+                </TransitionLink>
               </li>
             ))}
 
             <a
-              href="https://www.linkedin.com/feed/"
+              href={LINKEDIN_URL}
               target="_blank"
               className="flex items-center justify-center flex-shrink-0 rounded w-6 h-6 bg-white cursor-pointer"
             >

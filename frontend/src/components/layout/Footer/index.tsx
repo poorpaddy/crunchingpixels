@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
 import { NAVITEMS } from "@config/constants";
 import Container from "@layout/Container";
+import TransitionLink from "@general/TransitionLink";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <ul className="flex justify-between md:space-x-6 lg:space-x-16">
           {NAVITEMS.map(({ label, key, url }) => (
             <li className="text-sm lg:text-base" key={key}>
-              <Link to={url}>{label}</Link>
+              <TransitionLink to={url}>{label}</TransitionLink>
             </li>
           ))}
         </ul>

@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-transition-link",
     {
       resolve: "gatsby-source-sanity",
       options: {

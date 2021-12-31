@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
 import { ICards } from "../types";
 import cn from "classnames";
+import TransitionLink from "@general/TransitionLink";
 
 const Card: React.FC<ICards> = ({ title, avatar, posts }) => {
   return (
@@ -26,13 +26,17 @@ const Card: React.FC<ICards> = ({ title, avatar, posts }) => {
           </h1>
           <ul className="text-left">
             {posts.map((post) => (
-              <Link key={post.slug.current} to={post.slug.current}>
+              <TransitionLink
+                TransitionLink
+                key={post.slug.current}
+                to={post.slug.current}
+              >
                 <li className="text-sm lg:text-base text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2">
                   {post.title.length > 38
                     ? `${post.title.substring(0, 38)}...`
                     : post.title}
                 </li>
-              </Link>
+              </TransitionLink>
             ))}
           </ul>
         </div>

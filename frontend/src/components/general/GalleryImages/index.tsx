@@ -19,7 +19,7 @@ const GalleryImages: React.FC<IProps> = ({ gallery = [] }) => {
   if (!gallery || gallery.length <= 0) return null;
   return (
     <>
-      <SRLWrapper>
+      <SRLWrapper options={{ buttons: { showDownloadButton: false } }}>
         <div className="hidden">
           {gallery.map(({ gatsbyImageData, altText }, i) => (
             <GatsbyImage
@@ -47,13 +47,13 @@ const GalleryImages: React.FC<IProps> = ({ gallery = [] }) => {
           <div className="overflow-hidden border-2 border-gray-200 h-[300px] sm:h-[400px] md:h-[565px] lg:h-[636px] mt-5 lg:mt-16 p-2 md:p-3 lg:p-4">
             <div className="flex h-full w-full overflow-hidden">
               <div
-                className="flex h-full transition-all duration-500"
+                className="flex h-full w-full transition-all duration-500"
                 style={{ transform: `translateX(-${slide * 100}%)` }}
               >
                 {gallery.map(({ gatsbyImageData, altText }, i) => (
                   <div
                     key={i}
-                    className="flex-shrink-0 w-full h-full cursor-pointer"
+                    className="flex-shrink-0 w-full h-full cursor-pointer flex justify-center"
                     onClick={() => {
                       openLightbox(i);
                     }}
@@ -77,7 +77,7 @@ const GalleryImages: React.FC<IProps> = ({ gallery = [] }) => {
                           goToSlide(slide + 1);
                         }
                       }}
-                      className="w-full h-full object-cover object-center"
+                      className="object-contain objet-center"
                       image={gatsbyImageData}
                       alt={altText}
                     />
