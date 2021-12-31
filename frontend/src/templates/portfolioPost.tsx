@@ -6,7 +6,7 @@ import GalleryImages from "@components/general/GalleryImages";
 import { IPortfolioPost } from "@src/types";
 
 const Portfolio: React.FC<IPortfolioPost> = ({ pageContext: portfolio }) => {
-  const { title, category, gallery, _rawBody } = portfolio;
+  const { title, category, gallery, summary, _rawBody } = portfolio;
 
   const formatGalleryData = () => {
     return gallery.map(({ asset }) => ({
@@ -19,7 +19,7 @@ const Portfolio: React.FC<IPortfolioPost> = ({ pageContext: portfolio }) => {
     <Layout
       seo={{
         title,
-        description: title,
+        description: summary,
       }}
     >
       <div className="bg-white mt-2 lg:mt-4 mb-2 lg:mb-4 rounded-[20px] min-h-[80vh]">

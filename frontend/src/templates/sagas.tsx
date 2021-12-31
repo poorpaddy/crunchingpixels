@@ -113,6 +113,9 @@ export const query = graphql`
         date
         category {
           name
+          slug {
+            current
+          }
         }
       }
     }

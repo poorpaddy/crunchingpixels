@@ -84,6 +84,9 @@ async function createSagaPostPages(graphql, actions) {
           date
           category {
             name
+            slug {
+              current
+            }
           }
           _rawBody
         }

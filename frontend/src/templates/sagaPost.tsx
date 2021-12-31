@@ -8,7 +8,7 @@ import GalleryImages from "@general/GalleryImages";
 import { ISagaPost } from "@src/types";
 
 const Saga: React.FC<ISagaPost> = function ({ pageContext: saga }) {
-  const { title, date, category, gallery, _rawBody } = saga;
+  const { title, date, category, gallery, summary, _rawBody } = saga;
 
   const formatGalleryData = () => {
     return gallery.map(({ asset }) => ({
@@ -21,7 +21,7 @@ const Saga: React.FC<ISagaPost> = function ({ pageContext: saga }) {
     <Layout
       seo={{
         title,
-        description: title,
+        description: summary,
       }}
     >
       <div className="bg-white mt-2 lg:mt-4 mb-2 lg:mb-4 rounded-[20px] min-h-[80vh]">

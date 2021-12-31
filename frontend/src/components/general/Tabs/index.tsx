@@ -20,7 +20,7 @@ const Tabs: React.FC<IProps> = ({ tabs, activeTab, setActiveTab }) => {
         ))}
       </ul>
       <img
-        className="relative top-[5px] cursor-pointer ml-2.5"
+        className="lg:hidden relative top-[5px] cursor-pointer ml-2.5"
         src={chevronRight}
         alt="chevron right icon"
       />
