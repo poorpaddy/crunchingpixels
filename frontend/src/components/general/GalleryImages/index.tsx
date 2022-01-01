@@ -27,6 +27,9 @@ const GalleryImages: React.FC<IProps> = ({ gallery = [] }) => {
               className="w-full h-full object-cover object-center"
               image={gatsbyImageData}
               alt={altText}
+              imgStyle={{
+                objectFit: "contain",
+              }}
             />
           ))}
         </div>
@@ -80,6 +83,9 @@ const GalleryImages: React.FC<IProps> = ({ gallery = [] }) => {
                       className="object-contain objet-center"
                       image={gatsbyImageData}
                       alt={altText}
+                      imgStyle={{
+                        objectFit: "contain",
+                      }}
                     />
                   </div>
                 ))}
