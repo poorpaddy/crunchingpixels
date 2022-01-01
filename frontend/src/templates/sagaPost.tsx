@@ -1,5 +1,5 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import Container from "@layout/Container";
 import Layout from "@layout/Layout";
 import { getFormatedDate } from "@utils";
@@ -27,13 +27,15 @@ const Saga: React.FC<ISagaPost> = function ({ pageContext: saga }) {
       <div className="bg-white mt-2 lg:mt-4 mb-2 lg:mb-4 rounded-[20px] min-h-[80vh]">
         <Container className="pt-10 pb-14">
           <ul className="flex space-x-3">
-            {category.map(({ name }) => (
-              <li
-                key={name}
-                className="text-orange text-xs lg:text-sm font-roboto"
-              >
-                {name}
-              </li>
+            {category.map(({ name, slug }) => (
+              <Link to={`/sagas/${slug.current}`}>
+                <li
+                  key={name}
+                  className="text-orange text-xs lg:text-sm font-roboto"
+                >
+                  {name}
+                </li>
+              </Link>
             ))}
           </ul>
           <h1 className="text-[26px] lg:text-[40px] font-bold leading-10 mt-[19px] lg:mt-[30px]">

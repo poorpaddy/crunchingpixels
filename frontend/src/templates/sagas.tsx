@@ -94,6 +94,7 @@ export const query = graphql`
     sagas: allSanitySaga(
       skip: $skip
       limit: $limit
+      sort: { fields: date, order: DESC }
       filter: {
         category: { elemMatch: { slug: { current: { eq: $categorySlug } } } }
       }

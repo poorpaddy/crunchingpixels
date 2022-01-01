@@ -35,7 +35,7 @@ const Portfolio: React.FC<IPortfolioPost> = ({ pageContext: portfolio }) => {
                 </li>
               ))}
             </ul>
-            <h1 className="text-[26px] lg:text-[40px] font-bold leading-[26px] md:leading-10 mt-[19px] lg:max-w-[540px]">
+            <h1 className="text-[26px] lg:text-[40px] font-bold leading-[26px] md:leading-10 mt-[19px]">
               {title}
             </h1>
             <div className="h-[1px] w-full bg-gray-200 mt-[18px] lg:mt-8"></div>
