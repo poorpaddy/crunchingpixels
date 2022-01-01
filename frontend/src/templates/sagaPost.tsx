@@ -28,14 +28,11 @@ const Saga: React.FC<ISagaPost> = function ({ pageContext: saga }) {
         <Container className="pt-10 pb-14">
           <ul className="flex space-x-3">
             {category.map(({ name, slug }) => (
-              <Link to={`/sagas/${slug.current}`}>
-                <li
-                  key={name}
-                  className="text-orange text-xs lg:text-sm font-roboto"
-                >
+              <li key={name} className="text-orange text-xs lg:text-sm font-roboto">
+                <Link to={`/sagas/${slug.current}`}>
                   {name}
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
           <h1 className="text-[26px] lg:text-[40px] font-bold leading-10 mt-[19px] lg:mt-[30px]">
