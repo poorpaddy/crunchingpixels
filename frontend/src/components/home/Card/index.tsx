@@ -31,7 +31,7 @@ const Card: React.FC<ICards> = ({ title, avatar, posts }) => {
                 key={post.slug.current}
                 to={post.slug.current}
               >
-                <li className="text-sm lg:text-base text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2">
+                <li className="hover:text-orange text-sm lg:text-base text-secondary py-4 border-t-2 border-gray-200 md:first:border-t-0 lg:first:border-t-2">
                   {post.title.length > 38
                     ? `${post.title.substring(0, 38)}...`
                     : post.title}
