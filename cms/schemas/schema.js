@@ -4,8 +4,9 @@ import saga from "./saga";
 import portfolio from "./portfolio";
 import category from "./category";
 import homePage from "./homePage";
+import videoEmbed from "./videoEmbed";
 
 export default createSchema({
   name: "Sagas",
-  types: schemaTypes.concat([category, saga, portfolio, homePage]),
+  types: schemaTypes.concat([category, saga, portfolio, homePage, videoEmbed]),
 });
